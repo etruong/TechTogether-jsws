@@ -69,6 +69,8 @@ h3 {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
+    height: 300px;
+    width: 500px;
 }
 
 .measure-container img {

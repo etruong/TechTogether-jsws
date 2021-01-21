@@ -86,7 +86,7 @@ function calculateResults() {
     const checkBoxes = document.getElementsByName("symptoms");
     const count = {
         cs: 0,
-        lsc: 0,
+        lcs: 0,
         ss: 0,
     }
 
@@ -98,5 +98,5 @@ function calculateResults() {
         }
     }
 
-    return count.cs + count.lsc > 2 || count.ss > 0;
+    return (count.cs + count.lcs) <= 2 && count.ss === 0;
 }

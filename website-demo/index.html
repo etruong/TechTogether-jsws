@@ -61,6 +61,7 @@
                     <p>2</p>
                     <p>3</p>
                     <p>4</p>
+                    <p>5</p>
                 </div>
                 <div>
                     <img src="./img/prevent/wash-hands.png" alt="" />
@@ -129,27 +130,13 @@
                         <label for="lessComSymptom7"> a rash on skin, or discolouration of fingers or toes</label><br>
                     </div>
                 </div>
-                <div class="col-med">
-                    <h3>Serious</h3>
-                    <div>
-                        <input type="checkbox" id="seriousSymptom1" name="symptoms" value="ss-breath">
-                        <label for="seriousSymptom1"> difficulty breathing or shortness of breath</label><br>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="seriousSymptom2" name="symptoms" value="ss-chestPain">
-                        <label for="seriousSymptom2"> chest pain or pressure</label><br>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="seriousSymptom3" name="symptoms" value="ss-lossSpeech">
-                        <label for="seriousSymptom3"> loss of speech or movement</label><br>
-                    </div>
-                </div>
+                
             </div>
             <div class="results hidden">
                 <img src="./img/report-result/see-doctor.png" alt="" />
                 <div>
-                    <p>It is recommended to get tested and self-quarantine.</p>
-                    <p>Always call before visiting your doctor or health facility</p>
+                    <p id="results-text">It is recommended to get tested and self-quarantine.
+                        Always call before visiting your doctor or health facility</p>
                 </div>
             </div>
             <button id="result-btn" class="btn btn-outline-primary">Check</button>
@@ -158,6 +145,10 @@
     <footer>
         <p>Note all information above is taken from https://www.who.int/health-topics/coronavirus</p>
     </footer>
+
+    <!-- JavaScript Here: -->
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
