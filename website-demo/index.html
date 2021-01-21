@@ -14,17 +14,151 @@
         For more information about bootstrap: 
         https://getbootstrap.com/docs/4.3/getting-started/introduction/ 
     -->
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
-<body class="container mt-5">
-    <h1>JavaScript Introductory Workshop</h1>
-    <h2>Seattle TechTogether Hackathon</h2>
-    <p>
-        To start, right click within the website and select <span class="font-weight-bold">"inspect"</span>
-        this will open the Chrome inspector tool. Then, click the <span class="font-weight-bold">"console"</span> tab.
-    </p>
-
-    <!-- JavaScript File Here: -->
+<body>
+    <header>
+        <p>an informative webpage about</p>&nbsp;
+        <h1>COVID</h1>
+    </header>
+    <main class="container mt-5 mb-5">
+        <section id="overview-section">
+            <h2>What is COVID?</h2>
+            <p>
+                Coronavirus disease (COVID-19) 
+                is an infectious disease caused by a
+                newly discovered coronavirus.
+            </p>
+            <p>
+                Most people infected with the COVID-19 virus will 
+                experience mild to moderate respiratory illness and 
+                recover without requiring special treatment.  Older 
+                people, and those with underlying medical problems 
+                like cardiovascular disease, diabetes, chronic respiratory 
+                disease, and cancer are more likely to develop serious illness.
+            </p>
+            <p>
+                The best way to prevent and slow down transmission is to be 
+                well informed about the COVID-19 virus, the disease it causes 
+                and how it spreads. Protect yourself and others from infection 
+                by washing your hands or using an alcohol based rub frequently 
+                and not touching your face. 
+            </p>
+            <p>
+                The COVID-19 virus spreads primarily through droplets of saliva 
+                or discharge from the nose when an infected person coughs or sneezes,
+                so it’s important that you also practice respiratory etiquette 
+                (for example, by coughing into a flexed elbow).
+            </p>
+        </section>
+        <hr />
+        <section id="prevent-section">
+            <h2>Preventative Measures</h2>
+            <p>Measures to decrease the spread of COVID and keep you and your loved ones safe</p>
+            <div class="measure-container">
+                <div class="pagination">
+                    <p class="selected">1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+                <div>
+                    <img src="./img/prevent/wash-hands.png" alt="" />
+                    <p>Wash your hands regularly with soap and water, 
+                        or clean them with alcohol-based hand rub.</p>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section id="symptom-section">
+            <h2>Symptom Checklist</h2>
+            <p>
+                COVID-19 affects different people in different ways. Most infected people 
+                will develop mild to moderate illness and recover without hospitalization.
+                People with mild symptoms who are otherwise healthy should manage 
+                their symptoms at home. 
+            </p>
+            <p class="mb-5">
+                **Note: On average it takes 5–6 days from when someone is infected with the virus 
+                for symptoms to show, however it can take up to 14 days.**
+            </p>
+            <div class="row checklist">
+                <div class="col-sm">
+                    <h3>Common</h3>
+                    <div>
+                        <input type="checkbox" id="commonSymptom1" name="symptoms" value="fever">
+                        <label for="commonSymptom1"> Fever</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="commonSymptom2" name="symptoms" value="dryCough">
+                        <label for="commonSymptom2"> Dry Cough</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="commonSymptom3" name="symptoms" value="tired">
+                        <label for="commonSymptom3"> Tiredness</label><br>
+                    </div>
+                </div>
+                <div class="col-med">
+                    <h3>Less Common</h3>
+                    <div>
+                        <input type="checkbox" id="lessComSymptom1" name="symptoms" value="achePain">
+                        <label for="lessComSymptom1"> aches and pains</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lessComSymptom2" name="symptoms" value="soreThroat">
+                        <label for="lessComSymptom2"> sore throat</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lessComSymptom3" name="symptoms" value="diarrhea">
+                        <label for="lessComSymptom3"> diarrhoea</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lessComSymptom4" name="symptoms" value="conjunctivitis">
+                        <label for="lessComSymptom4"> conjunctivitis</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lessComSymptom5" name="symptoms" value="headache">
+                        <label for="lessComSymptom5"> headache</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lessComSymptom6" name="symptoms" value="loss">
+                        <label for="lessComSymptom6"> loss of taste or smell</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lessComSymptom7" name="symptoms" value="rash">
+                        <label for="lessComSymptom7"> a rash on skin, or discolouration of fingers or toes</label><br>
+                    </div>
+                </div>
+                <div class="col-med">
+                    <h3>Serious</h3>
+                    <div>
+                        <input type="checkbox" id="seriousSymptom1" name="symptoms" value="breath">
+                        <label for="seriousSymptom1"> difficulty breathing or shortness of breath</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="seriousSymptom2" name="symptoms" value="chestPain">
+                        <label for="seriousSymptom2"> chest pain or pressure</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="seriousSymptom3" name="symptoms" value="lossSpeech">
+                        <label for="seriousSymptom3"> loss of speech or movement</label><br>
+                    </div>
+                </div>
+            </div>
+            <div class="results hidden">
+                <img src="./img/report-result/see-doctor.png" alt="" />
+                <div>
+                    <p>It is recommended to get tested and self-quarantine.</p>
+                    <p>Always call before visiting your doctor or health facility</p>
+                </div>
+            </div>
+            <button class="btn btn-outline-primary">Check</button>
+        </section>
+    </main>
+    <footer>
+        <p>Note all information above is taken from https://www.who.int/health-topics/coronavirus</p>
+    </footer>
 </body>
 
 </html>
