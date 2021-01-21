@@ -112,3 +112,9 @@ button {
 .checklist > div {
     padding: 50px;
 }
+
+header span {
+    font-weight: normal;
+    font-size: 12pt;
+    vertical-align: middle;
+}
